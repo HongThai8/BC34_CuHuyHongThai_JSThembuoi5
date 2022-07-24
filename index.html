@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- font font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Bài 1 : Tính thuế thu nhập cá nhân -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Tính thuế thu nhập cá nhân</div>
+            <div class="card-body fs-5">
+              <div class="form-group d-flex justify-content-around">
+                <input class="form-control " placeholder="Họ tên" id="name">
+                <input class="form-control " type="number" placeholder="Tổng thu nhập năm" id="totalTN">
+                <input class="form-control " type="number" placeholder="Số người phụ thuộc" id="people">
+              </div>
+            </div>
+            <button class="btn btn-success" id="btnTinh">Tính tiền thuế</button>
+
+            <div id="tinhThue" class="card-footer text-muted"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bài 2 : Tính tiền cáp -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Tính tiền cáp</div>
+            <div class="card-body fs-5">
+              <div class="form-group d-flex justify-content-around">
+                <select class="form-control" id="user" onchange="myFuntion()">
+                    <option>Chọn loại khách hàng</option>
+                    <option>Nhà dân</option>
+                    <option>Doanh nghiệp</option>
+                </select>
+              </div>
+              <div class="form-group d-flex justify-content-around mt-4">
+                <input class="form-control" placeholder="Nhập mã khách hàng" id="maKH">
+                <input class="form-control" type="number" placeholder="Số kênh cao cấp" id="kenhCC">
+                <input type="text" id="soKN" class="form-control" style="display: none;" placeholder="Số kết nối">
+              </div>
+            </div>
+            <button class="btn btn-success" id="btnTinhTien">Tính tiền cáp</button>
+
+            <div class="mt-2 fs-3s" id="tienCap"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <script src="./main.js"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
